@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7));
+}
+
+.brain{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+nav{
+	display: flex;
+	padding: 20px 35px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	width: 250px;
+	cursor: pointer;
+	top: 1;
+	transform: translateY(-55px);
+}
+
+.nav_links{
+	flex: 1;
+	text-align: right;
+	top: 1;
+}
+
+.nav_links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	transform: translateY(-65px);
+}
+
+.nav_links ul li a{
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	transform: translateY(-55px);
+}
+.nav_links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: lime;
+	display: block;
+	margin: auto;
+	transition: 0.5s ease;
+}
+
+.nav_links ul li:hover::after{
+	width: 100%;
+}
+
+/*home*/
+
+.text_box{
+	width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text_box h1{
+	font-size: 65px;
+	line-height: 60px;
+	color: #fff;
+	transform: translateY(40px);
+}
+
+.text_box p{
+	font-size: 25px;
+	line-height: 35px;
+	color: #fff;
+	margin: 10px 0 40px;
+	transform: translateY(70px);
+}
+
+/*course*/
+
+.course{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1{
+   font-size: 35px;
+   font-weight: 600;
+   line-height: 35px;
+   color: rgb(44, 44, 80); 
+}
+
+p{
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding-bottom: 10px;
+}
+
+.row{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_col{
+	flex-basis: 31%;
+	background: rgb(44, 44, 80);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+
+h3{
+	text-align: center;
+	font-weight: 400;
+	margin: 10px 0;
+	color: yellow;
+}
+
+.course_col:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+}
+
+/*campus*/
+.campus{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.campus_col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.campus_col img{
+	width: 100%;
+	display: block;
+}
+
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+.layer:hover{
+	background: rgba(249, 255, 122, 0.8);
+}
+
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	transform: translateX(0%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 35%;
+	opacity: 1;
+}
+
+/*link*/
+.link{
+	transform: translate(535px, -20px);
+}
+
+.link a{
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.link a:hover{
+	text-decoration: underline;
+}
+
+/*facility*/
+
+.facility{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.facility_col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.facility_col img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.facility_col p{
+	padding: 0;
+	color: black;
+}
+
+.facility_col h3{
+	color: rgb(44, 44, 80); 
+	margin-top: 16px;
+	margin-bottom: 15px;
+
+}
+
+/*names*/
+
+.name{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.name_col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.name_col img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.name_col p{
+	padding: 0;
+	color: black;
+}
+
+.name_col h3{
+	background-color: rgb(44, 44, 80);
+	border: 2px solid;
+	border-radius: 10px;
+	font-size: 24px;
+	color: white; 
+	margin-top: 16px;
+	margin-bottom: 10px;
+
+}
+
+/*footer*/
+
+.footer{
+	margin-top: 20px;
+	width: 100%;
+	background-color: rgb(70, 70, 87);
+	color: whitesmoke;
+	padding: 3px;
+	text-align: center;
+	font-family: 'Poppins',sans-serif;
+}
+
+.footer .contact{
+	padding-top: 5px;
+}
+
+.footer p{
+	color: yellow;
+}
+
+
